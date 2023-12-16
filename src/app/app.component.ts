@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  selector: 'app-root', // This selector is used in index.html
+  templateUrl: './app.component.html', // Path to the HTML template
+  styleUrls: ['./app.component.scss'] // Path to the styles (if you have any)
 })
 export class AppComponent {
-  title = 'RainWave';
+  rainIntensity = 50; // Default value for the rain intensity
 }
+
+
